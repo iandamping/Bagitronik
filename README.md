@@ -17,26 +17,26 @@ With your generous help and our awesome app, we hope that we can prevent or redu
 Special note for you : Make sure you have a good internet connection, So you can save the earth from e-waste fabulously !
 
 Made with love by Binar Academy Batch #11 - Team B
-Product Specialist - Rosmawarda Yunarya
+Product Specialist: Rosmawarda Yunarya
 
-UI / UX Designer
-Dave Rinatza Zain
+UI / UX Designer :
+Dave Rinatza Zain, 
 Muhammad Iqbal
 
-Front End Developer
-Aisyah Muhaddisi
-Handani Andri
+Front End Developer :
+Aisyah Muhaddisi, 
+Handani Andri, 
 M. Dheo Fuady
 
-Android Developer
-Ian Christian Adolfian Damping
-Abdul Gafar
-Stanislaus Arya
+Android Developer :
+Ian Christian Adolfian Damping, 
+Abdul Gafar, 
+Stanislaus Arya, 
 Flabi Raya
 
-Back End Developer
-Adivia Gilang Prakarsa
+Back End Developer :
+Adivia Gilang Prakarsa, 
 Achmad Khodzim
 
-Quality Assurance
+Quality Assurance :
 Novianto Rudy
