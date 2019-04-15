@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detailFixedToolbarDonasi"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detailFixedToolbarDonasi"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivDonasiProfile"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="@dimen/spacing_xhuge"
+                        android:layout_marginEnd="@dimen/spacing_xlarge"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/tvDonasiNameNya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivDonasiProfile"
+                        android:fontFamily="@font/lato"
+                        android:text="Kochenk Gawrong"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/letter_large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvDonasiNameNya"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:layout_toRightOf="@id/ivDonasiProfile"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_gravity="center"
+                                app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/tvDonasiProfileCity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/lato"
+                            android:text="Kota Yogyakarta, DIY"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Membutuhkan"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/letter_large"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivDetailProductnyaDonasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvDonasiProductNya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/spacing_medium"
+                    android:text="Nama Barang"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/letter_large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDeskripsiProductDonasiNya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="@dimen/spacing_medium"
+                    android:textColor="@color/black"
+                    tools:text="Lorem ipsum" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivJenisProductDonasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_perangkatkomputer" />
+
+                    <TextView
+                            android:id="@+id/tvJenisProductDonasiNya"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="27dp"
+                            android:fontFamily="@font/lato"
+                            android:padding="@dimen/spacing_medium"
+                            tools:text="Lorem ipsum"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivConditionProductDonasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_berfungsi" />
+
+                    <TextView
+                        android:id="@+id/tvKondisiProductDonasiNya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="27dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="@dimen/spacing_medium"
+                        tools:text="Lorem ipsum" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:padding="@dimen/spacing_medium"
+                        android:text="Pesan :"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDonasiNoteNya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:padding="@dimen/spacing_medium"
+                        tools:text="Lorem ipsum" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnDonasiOwnerProductKu"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:visibility="gone"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/letter_large"
+                        android:textStyle="bold"
+                        android:text="Dengan Alasan" />
+
+                    <TextView
+                        android:id="@+id/tvFinishDeniedNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/ivDonasiProfile"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/letter_large"
+                        android:textStyle="bold"
+                        tools:text="+6289123124123124" />
+
+                    <LinearLayout
+                        android:id="@+id/lnTerimaDonasiAtauTolak"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/btnTerimaDonasiProduKu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/forbuttonloginregister"
+                            android:text="TERIMA"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/btnTolakDonasiProduKu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:layout_weight="1"
+                            android:background="@drawable/forbuttontoregister"
+                            android:text="TOLAK"
+                            android:textColor="@color/colorComment" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnFinishDonasi"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvFinishDonasiName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:layout_toRightOf="@id/ivDonasiProfile"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/letter_large"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:text="Kochenk Gawrong" />
+
+                    <TextView
+                        android:id="@+id/tvFinishDonasiPhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/ivDonasiProfile"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/letter_large"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:text="+6289123124123124" />
+
+                    <Button
+                        android:id="@+id/btnBatalkanPermintaanDonasiNya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/forbuttontoregister"
+                        android:fontFamily="@font/lato"
+                        android:text="Batalkan Permintaan"
+                        android:textColor="@color/colorComment"
+                        android:visibility="gone" />
+
+                    <Button
+                            android:id="@+id/btnBatalkanPermintaanDonasiNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/forbuttontoregister"
+                            android:fontFamily="@font/lato"
+                            android:text="Batalkan Permintaan"
+                            android:textColor="@color/colorComment"
+                            android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

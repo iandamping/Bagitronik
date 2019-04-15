@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/pure_white"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragment.profile.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:visibility="gone"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="My Profile">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+            android:id="@+id/edit_akunku"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@id/toolbarMyProfile"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_settings"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivFotoAkunku"
+            android:layout_marginTop="12dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/edit_akunku"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_account_circle_white"/>
+
+
+    <TextView
+            android:id="@+id/nama_pemilik_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivFotoAkunku"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/lato"
+            android:text="@string/id_akun"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/tveditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_pemilik_akun"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/foreditprofile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:padding="@dimen/spacing_medium"
+            android:fontFamily="@font/lato"
+            android:text="Ubah Profil"
+            android:textColor="@color/black"/>
+
+
+    <LinearLayout
+            android:id="@+id/jumlah_transaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lnUserEmail"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rectangle_profile"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:id="@+id/freq_barter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:textSize="20sp"
+                    android:layout_margin="12dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Tukar"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_medium"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/freq_donasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_blue"
+                    android:textSize="28sp"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="12dp"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:text="Donasi"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/lnAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tveditProfile"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="12dp"
+                app:srcCompat="@drawable/ic_home_black"/>
+
+        <TextView
+                android:id="@+id/tvUserAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                tools:text="@string/text_alamat_akun"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lnCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnAddress"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="12dp"
+                app:srcCompat="@drawable/ic_location_on_black_24dp"/>
+
+        <TextView
+                android:id="@+id/tvUserCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:textStyle="normal"
+                tools:text="Samarinda"
+                tools:textColor="@color/black" android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lnPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnCity"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="12dp"
+                app:srcCompat="@drawable/ic_local_phone_black"/>
+
+        <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:textStyle="normal"
+                tools:text="@string/text_nomorhp_akun"
+                tools:textColor="@color/black" android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lnUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnPhoneNumber"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="12dp"
+                app:srcCompat="@drawable/ic_email_black"/>
+
+        <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:textStyle="normal"
+                tools:text="@string/text_email_akun"
+                tools:textColor="@color/black" android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_alignTop="@+id/jumlah_transaksi"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/line"
+            android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "925229417549",
+    "firebase_url": "https://bagi-tronik.firebaseio.com",
+    "project_id": "bagi-tronik",
+    "storage_bucket": "bagi-tronik.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925229417549:android:25edfaa6e7226ffa",
+        "android_client_info": {
+          "package_name": "com.binar.bagitronik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925229417549-fn11veemmab8101o3jfjrs6c4b50invo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binar.bagitronik",
+            "certificate_hash": "67850421df2bdc0c176cc96986aec721ec0d8c94"
+          }
+        },
+        {
+          "client_id": "925229417549-7oftaepbpjvm21go3ep08rjt3lfpqm1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXZuLTi789ukzwZk_Lmg4_jgkD3m3y2rI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925229417549-7oftaepbpjvm21go3ep08rjt3lfpqm1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

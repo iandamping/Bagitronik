@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:ignore="MissingConstraints">
+
+    <TextView
+            android:id="@+id/tvDialogBarter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/lato"
+            android:text="Apakah kamu yakin proses tukar sudah selesai dan barang yang kamu terima sudah sesuai?"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/btnDialogFinishBarter"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato"
+                android:background="@android:color/transparent"
+                android:text="IYA"
+                android:textColor="@color/colorComment"
+                android:textStyle="bold" />
+
+        <Button
+                android:id="@+id/btnDialogNotFinishBarter"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/lato"
+                android:text="TIDAK"
+                android:textColor="@color/dc_gray"
+                android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.binar.bagitronik">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <application
+        android:name=".BagitronikApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.appinformation.AppInformationActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.uploadpage.UploadActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.slider.SlideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.activity.detail.DetailProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.activity.listproduct.AllProductListActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.editprofile.EditProfileActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.detailbarter.DetailBarterActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.detaildonasi.DetailDonasiActivity"
+            android:theme="@style/NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.activity.detaillandfills.DetailLandfillsActivity"
+                  android:theme="@style/NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <meta-data
+                android:name="firebase_crashlytics_collection_enabled"
+                android:value="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyBYeIri8DJnUjvwP9TPMRHIH6CdTYud6pA" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+
+</manifest>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Bagitronik</string>
+    <string name="email">Email</string>
+    <string name="daftar">DAFTAR</string>
+    <string name="sudah_punya_akun_masuk_disini">Sudah punya akun ? Masuk disini</string>
+
+    <string name="slide1_title">Cari tempat pembuangan limbah elektronik terdekat.</string>
+    <string name="slide2_title">Tukarkan elektronik bekas atau rusakmu dengan elektronik orang lain yang kamu butuhkan.</string>
+    <string name="slide3_title">Donasikan elektronik bekasmu kepada orang lain.</string>
+
+    <string name="not_null">Tidak boleh kosong</string>
+    <string name="perangkat_komputer">Perangkat Komputer</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="telepon_selular">Telepon Selular</string>
+    <string name="kamera">Kamera</string>
+    <string name="aksesoris_elektronik">Aksesoris Elektronik</string>
+    <string name="permission_not_granted">Permissions are not granted!</string>
+
+    <string name="package_name">com.binar.bagitronik.provider</string>
+
+    <!--upload barang-->
+    <string name="item_name_checker">Nama barang tidak boleh kosong</string>
+    <string name="item_description_checker">Deskripsi barang tidak boleh kosong</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="id_akun">nama lengkap pemilik akun</string>
+    <string name="text_email_akun">abdul@mail.com</string>
+    <string name="text_nomorhp_akun">085801291234</string>
+    <string name="text_alamat_akun">Sakulan,Pendowoharjo,Sewon,Bantul</string>
+    <string name="maaf_anda_belum_memiliki_barang">Maaf anda belum memiliki barang</string>
+
+    <!--//google api key-->
+    <!--<string name="google_api_key">AIzaSyBYeIri8DJnUjvwP9TPMRHIH6CdTYud6pA</string>-->
+
+</resources>

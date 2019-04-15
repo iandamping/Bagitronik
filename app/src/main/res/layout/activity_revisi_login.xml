@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivImage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_xlarge"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:src="@drawable/ic_bagitronik_splash" />
+
+    <TextView
+        android:id="@+id/tvText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImage1"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/spacing_xlarge"
+        android:fontFamily="@font/lato"
+        android:text="Sudah Punya Akun?"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvText1"
+        android:textColor="@color/colorTitle"
+        android:layout_marginLeft="@dimen/spacing_xlarge"
+        android:text="Silakan masuk terlebih dahulu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvText2"
+        android:layout_margin="@dimen/spacing_xlarge"
+        android:fontFamily="@font/lato"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="@string/email"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/foredittextloginregister"
+            android:fontFamily="@font/lato"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/colorTitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/lato"
+            android:text="Kata Sandi"
+            android:textColor="@color/colorTitle"
+            android:textSize="18sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorTitle"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/foredittextloginregister"
+                android:fontFamily="@font/lato"
+                android:inputType="textPassword"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/colorTitle" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:text="Passwod dan Email tidak cocok, coba lagi"
+            android:textColor="@color/status_diolak"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="Lupa kata sandi ?"
+            android:textColor="@color/colorTitle" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/spacing_xlarge"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forbuttonloginregister"
+            android:fontFamily="@font/lato"
+            android:text="MASUK!"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegisterFromLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xlarge"
+            android:layout_marginBottom="31dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:text="Belum punya akun? Daftar sekarang!"
+            android:textColor="@color/colorTitle" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvAjukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="Ajukan Permintaan Donasi"
+        android:textAlignment="center"
+        android:textColor="#0072FF"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="34dp"
+        tools:layout_conversion_absoluteWidth="171dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <TextView
+        android:id="@+id/tvAlasan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAjukan"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="Tulis Alasanmu Disini :"
+        android:textColor="#0072FF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="76dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="227dp" />
+
+
+    <EditText
+        android:paddingLeft="@dimen/spacing_medium"
+        android:id="@+id/etCatatanPermintaanDonasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@+id/tvAlasan"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/lato"
+        android:background="@drawable/textview_bg"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnKirimPermintaanDonasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCatatanPermintaanDonasi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_upload_button_blue"
+        android:fontFamily="@font/lato"
+        android:text="kirim"
+        android:textColor="@color/color_white" />
+
+</RelativeLayout>

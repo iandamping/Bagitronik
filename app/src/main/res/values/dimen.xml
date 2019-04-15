@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="spacing_small">5dp</dimen>
+    <dimen name="spacing_medium">8dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_xlarge">24dp</dimen>
+    <dimen name="spacing_xhuge">48dp</dimen>
+
+    <dimen name="letter_small">14sp</dimen>
+    <dimen name="letter_medium">16sp</dimen>
+    <dimen name="letter_large">18sp</dimen>
+
+
+</resources>

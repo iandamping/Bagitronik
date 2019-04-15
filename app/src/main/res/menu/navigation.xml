@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_beranda_line"
+            android:title="Beranda"
+    />
+
+    <item
+            android:id="@+id/navigation_locator"
+            android:icon="@drawable/ic_locator_line"
+            android:title="Lokator"/>
+
+    <item
+            android:id="@+id/navigation_upload"
+            android:icon="@drawable/ic_upload_line"
+            android:title="Upload"/>
+    <item
+            android:id="@+id/navigation_barang"
+            android:icon="@drawable/ic_barangku_line"
+            android:title="Barangku"/>
+
+    <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_akunku_line"
+            android:title="Akunku"
+            android:layout_width="wrap_content"/>
+
+</menu>
